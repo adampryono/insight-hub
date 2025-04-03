@@ -1,0 +1,278 @@
+/*========== TABLE OF CONTENTS ==========
+  1. Button CSS
+  2. Input CSS
+  3. Selectbox CSS
+  4. Text CSS
+  5. Heading CSS
+  6. Container CSS
+========================================*/
+
+/*--------------------------------------
+  1. Button CSS
+--------------------------------------*/
+
+.ui.button.round {
+    border-radius: 6px;
+  }
+  
+  .ui.button.size-xl {
+    height: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  
+  .ui.button.size-xs {
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .ui.button.size-lg {
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  
+  .ui.button.size-sm {
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  
+  .ui.button.size-md {
+    height: 42px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+  }
+  
+  .ui.button.gradient.linear_1_indigo_900 {
+    background: linear-gradient(123deg, #62bdae, #44babd, #3ba2c3, #2b2b67);
+    color: #ffffff;
+  }
+  .ui.button.fill.white_a700_33 {
+    background-color: #ffffff33;
+    color: #ffffff;
+  }
+  
+  .ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  /*--------------------------------------
+    2. Input CSS
+  --------------------------------------*/
+  
+  .ui.input.round {
+    border-radius: 10px;
+  }
+  .ui.input.size-md {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  
+  .ui.input.size-sm {
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+  }
+  
+  .ui.input.size-xs {
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+  }
+  
+  .ui.input.gradient.linear_1_indigo_900 {
+    background: linear-gradient(123deg, #62bdae, #44babd, #3ba2c3, #2b2b67);
+    color: #ffffff;
+  }
+  .ui.input.outline.gray_300 {
+    color: #adb5bd;
+    border: 1px solid #dee2e6;
+  }
+  
+  .ui.input.fill.background_section {
+    background-color: #1b1f24;
+    color: #adb5bd;
+  }
+  
+  .ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    font-size: 16px;
+  }
+/*--------------------------------------
+  3. Selectbox CSS
+--------------------------------------*/
+
+.ui.selectbox.square {
+    border-radius: 0px;
+  }
+  
+  .ui.selectbox.size-xs {
+    height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  
+  .ui.selectbox.fill.background_section {
+    background-color: #1b1f24;
+    color: #ffffff;
+  }
+  
+  .ui.selectbox {
+    display: flex;
+  }
+/*--------------------------------------
+  4. Text CSS
+--------------------------------------*/
+
+.ui.text.size-textxs {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  
+  .ui.text.size-texts {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .ui.text.size-textxl {
+    font-size: 32px;
+    font-weight: 400;
+    @media only screen and (max-width: 1050px) {
+      font-size: 30px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      font-size: 28px;
+    }
+  }
+  .ui.text {
+    color: #ffffff;
+    font-family: Inter;
+  }
+  
+  /*--------------------------------------
+    5. Heading CSS
+  --------------------------------------*/
+  
+  .ui.heading.size-heading_h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .ui.heading.size-heading_h2 {
+    font-size: 48px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+      font-size: 44px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      font-size: 38px;
+    }
+  }
+  .ui.heading.size-body_b4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .ui.heading.size-bold_headings_h1 {
+    font-size: 36px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+      font-size: 34px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      font-size: 32px;
+    }
+  }
+  
+  .ui.heading.size-semi_bold_headings_s5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .ui.heading.size-heading_h3 {
+    font-size: 32px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+      font-size: 30px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      font-size: 28px;
+    }
+  }
+  
+  .ui.heading.size-body_b5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .ui.heading.size-heading_h6 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .ui.heading.size-textmd {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .ui.heading.size-textlg {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .ui.heading.size-headingxs {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .ui.heading.size-headings {
+    font-size: 24px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+      font-size: 22px;
+    }
+  }
+  
+  .ui.heading {
+    color: #ffffff;
+    font-family: Plus Jakarta Sans;
+  }
+/*--------------------------------------
+  6. Container CSS
+--------------------------------------*/
+
+.container-xs {
+    max-width: 1008px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container-sm {
+    max-width: 1040px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+                        
