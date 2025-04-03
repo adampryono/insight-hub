@@ -1,0 +1,240 @@
+/*========== TABLE OF CONTENTS ==========
+1. Common CSS
+2. Page CSS
+=============================================*/
+
+/*----------------------------------------------
+1. Common CSS
+----------------------------------------------*/
+.columnview {
+  gap: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.view {
+  height: 176px;
+  background-color: #1b1f24;
+}
+
+.rowcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+    height: 148px;
+    width: 100%;
+    object-fit: cover;
+    @media only screen and (max-width: 1050px) {
+      height: auto;
+    }
+  }
+  
+  /*----------------------------------------------
+  2. Page CSS
+  ----------------------------------------------*/
+  .navigationbar {
+    padding-top: 42px;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    width: 242px;
+    height: 100vh;
+    position: sticky !important;
+    top: 0px;
+    overflow: auto;
+    @media only screen and (max-width: 1050px) {
+      padding-top: 20px;
+    }
+  }
+  .sidebarlogo_one {
+    height: 20px;
+    margin-left: 44px;
+    width: 84px;
+    object-fit: contain;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+    }
+  }
+  
+  .columnproducts {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1px;
+    padding: 0px;
+    li {
+      width: 100%;
+    }
+    a {
+        margin-left: 22px;
+        margin-right: 22px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 14px 14px 14px 18px;
+        
+        &:hover {
+          background: linear-gradient(123.69deg, #62bdae, #44babd, #3ba2c3, #2b2b67);
+        }
+      }
+      
+      span {
+        flex-grow: 1;
+      }
+      
+  }
+  .columnsearch {
+    gap: 58px;
+    align-self: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media only screen and (max-width: 550px) {
+      gap: 29px;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e; /* Sesuaikan dengan warna latar belakang */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Mengubah posisi pencarian agar berada di kiri */
+}
+
+.search-input {
+    width: 95%;  /* Atur lebar sesuai kebutuhan */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #ccc;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+  
+  .columncreate {
+    margin-left: 58px;
+    margin-right: 58px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  .rowexplore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .columnexplore {
+    gap: 4px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .description-1 {
+    width: 76%;
+    line-height: 140%;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .create {
+    color: #ffffff !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 10px;
+    align-self: flex-end;
+    background: linear-gradient(123deg, #62bdae, #44babd, #3ba2c3, #2b2b67);
+    height: 44px;
+    min-width: 120px;
+    border-radius: 12px !important;
+    @media only screen and (max-width: 1050px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .heroicons-soliduser-circle {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+  }
+  
+  .gridview {
+    margin-bottom: 72px;
+    display: grid;
+    gap: 62px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .gridview {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .gridview {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+    

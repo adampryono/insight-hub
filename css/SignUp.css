@@ -1,0 +1,11 @@
+.rowwelcome {
+    margin-top: 64px;
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1050px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
